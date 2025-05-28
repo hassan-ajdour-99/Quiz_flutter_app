@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 class AnswerButton extends StatelessWidget {
   const AnswerButton({
     super.key,
-    required this.answerNumber,
+    required this.answers,
     required this.onTapAswer,
   });
 
-  final String answerNumber;
+  final String answers;
 
   final void Function() onTapAswer;
 
@@ -22,7 +22,7 @@ class AnswerButton extends StatelessWidget {
         backgroundColor: Colors.white,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       ),
-      child: Text(answerNumber),
+      child: Text(answers, textAlign: TextAlign.center),
     );
   }
 }
